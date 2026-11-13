@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Math Adventures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <!-- Header -->
+        <header class="hero">
+            <div class="decoration">🧸 🌈 ⭐</div>
+            <h1>Little Math Adventures!</h1>
+            <p>Let's play, count and learn together!</p>
+
+            <div class="stats">
+                <div>⭐ Score: <span id="score">0</span></div>
+                <div>🏆 Best: <span id="best">0</span></div>
+                <div>❤️ Streak: <span id="streak">0</span></div>
+            </div>
+        </header>
+
+        <!-- Game Modes -->
+        <section class="panel">
+            <h2>🎮 Choose Your Game</h2>
+
+            <div class="mode-buttons">
+                <button class="mode active" data-mode="count">
+                    🔢 <span>Counting</span>
+                </button>
+
+                <button class="mode" data-mode="add">
+                    ➕ <span>Addition</span>
+                </button>
+
+                <button class="mode" data-mode="sub">
+                    ➖ <span>Subtraction</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Main Game -->
+        <section class="panel game-panel">
+
+            <div class="game-info">
+                <span id="round">Question 1 of 10</span>
+                <span id="level">⭐ Level 1</span>
+            </div>
+
+            <div class="progress">
+                <div id="progress"></div>
+            </div>
+
+            <h2 id="question">
+                How many stars do you see?
+            </h2>
+
+            <p id="instruction">
+                Count the objects carefully!
+            </p>
+
+            <div id="objects" class="objects">
+                ⭐ ⭐ ⭐
+            </div>
+
+            <div id="choices" class="choices">
+                <button class="choice">2</button>
+                <button class="choice">3</button>
+                <button class="choice">4</button>
+                <button class="choice">5</button>
+            </div>
+
+            <div id="feedback" class="feedback">
+                🌟 You can do it! Pick your answer.
+            </div>
+
+            <button id="next" class="main-btn" hidden>
+                Next Question ➜
+            </button>
+
+        </section>
+
+        <!-- Achievements -->
+        <section class="panel achievement">
+            <div class="gift">🎁</div>
+            <h2>Your Little Achievements</h2>
+            <p>Every correct answer earns a star!</p>
+
+            <div id="trophies" class="trophies">
+                ☆ ☆ ☆ ☆ ☆
+            </div>
+
+            <p id="achievement">
+                Collect 5 stars to earn your first badge!
+            </p>
+        </section>
+
+        <!-- Restart -->
+        <footer>
+            <span>🌈 Made for little learners</span>
+            <button id="restart">↻ Restart Game</button>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
